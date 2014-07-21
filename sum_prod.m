@@ -47,7 +47,5 @@ SumProductPuzzle[range_List] := Module[
     Select[candidates, S1[#, range] && P1[#, range] && S2[#, range] &]
 ];
 
-SolutionNumber[range_List]:= Module[   
-    Length[SumProductPuzzle[range]]
-];
+SolutionNumber[range_List] := Length[SumProductPuzzle[range]];
 
